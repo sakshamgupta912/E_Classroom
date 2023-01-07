@@ -1,0 +1,114 @@
+  eclassroom.CreateAssignment.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.CreateTeam.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.Dashboard.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.LoginForm.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.RegisterForm.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.SubmitAssignment.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.SubmitList.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.UpdateAssignment.resources - Embedded, ContainedInManifestFile, 
+  eclassroom.ViewAssignment.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly eclassroom, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class User: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    System.String name : Public
+    System.String email : Public
+    System.String prn : Public
+    System.String password : Public
+Class eclassroom.CreateAssignment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(User, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    User u : Public
+    System.String code : Public
+Class eclassroom.CreateTeam: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(User): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    User u : Public
+Class eclassroom.SubmitAssignment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(User, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    User u : Public
+    System.String code : Public
+    Int32 id : Public
+    System.String title : Public
+    System.String description : Public
+    System.String due : Public
+    System.String link : Public
+    System.String submitBy : Public
+    Int32 len : Public
+    Int32 num : Public
+    Int32* sby : Public
+  Methods:
+    bubbleSort(Int32* IsConst IsConst, Int32): PrivateScope, Public, HideBySig
+    binarySearch(Int32* IsConst IsConst, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    deletePrn(Int32*, Int32, Int32): PrivateScope, Public, HideBySig
+    Insert(Int32*, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+Class eclassroom.SubmitList: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String code : Public
+    Int32 id : Public
+    System.String submitBy : Public
+    Int32 len : Public
+    Int32 num : Public
+    Int32* sby : Public
+  Methods:
+    bubbleSort(Int32* IsConst IsConst, Int32): PrivateScope, Public, HideBySig
+Class eclassroom.UpdateAssignment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(User, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    User u : Public
+    System.String code : Public
+    Int32 id : Public
+    System.String title : Public
+    System.String description : Public
+    System.String dueDate : Public
+    System.String dueTime : Public
+    System.String link : Public
+Class eclassroom.Dashboard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(User): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    User u : Public
+    System.String tempCode : Public
+    System.String createdBy : Public
+  Methods:
+    get(Int32): PrivateScope, Public, HideBySig
+    get(): PrivateScope, Public, HideBySig
+Class eclassroom.LoginForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    User user : Public
+    Boolean switchToRegister : Public
+Class eclassroom.RegisterForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean switchToLogin : Public
+    User user : Public
+Class eclassroom.ViewAssignment1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
